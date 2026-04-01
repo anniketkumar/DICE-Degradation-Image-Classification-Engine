@@ -1,0 +1,59 @@
+# =============================================================================
+# DICE — Degradation & Image Classification Engine
+# .gitignore
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# PROJECT-SPECIFIC: Large data directories (never commit these)
+# -----------------------------------------------------------------------------
+
+# Raw VisDrone source images (~1.44 GB) — download separately from:
+# https://github.com/VisDrone/VisDrone-Dataset
+VisDrone_Clean/
+
+# Generated dataset produced by dice_data_generator.py (~4+ GB)
+# Re-create locally by running the generator script.
+dataset/
+
+
+# -----------------------------------------------------------------------------
+# PYTHON
+# -----------------------------------------------------------------------------
+
+# Compiled bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+
+# -----------------------------------------------------------------------------
+# JUPYTER
+# -----------------------------------------------------------------------------
+
+# Auto-saved checkpoints (not source code)
+.ipynb_checkpoints/
+
+
+# -----------------------------------------------------------------------------
+# OS FILES
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+
+# -----------------------------------------------------------------------------
+# EDITORS & IDEs
+# -----------------------------------------------------------------------------
+
+.vscode/
+.idea/
